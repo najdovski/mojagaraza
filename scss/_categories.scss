@@ -1,0 +1,15 @@
+.category-card-deck {
+  margin-top: 3rem;
+}
+
+.category-card-height {
+  @include media-breakpoint-up(sm) {
+    height: 50% !important;
+  }
+}
+
+.category-fullscreen-card-height {
+  @include media-breakpoint-up(sm) {
+    height: auto !important;
+  }
+}

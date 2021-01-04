@@ -1,0 +1,43 @@
+body {
+  &:not(.no-bg) {
+    font-family: "Roboto", "FontAwesome", sans-serif;
+    background-image: $body-bg;
+    @include media-breakpoint-up(xl) {
+      background-image: url('bg/body-right.png'), url('bg/body-left.png'), $body-bg,;
+      background-position: right top 30%, left top 65%, center;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      background-size: 40%, 20%, 100%;
+    }
+  }
+}
+
+// Override the default bootstrap shadow
+.shadow {
+  box-shadow: 0 2px 124px 0 rgba(0, 0, 0, 0.11) !important;
+}
+
+
+// Heading
+.heading {
+  color: $third-color;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 700;
+
+  @include media-breakpoint-up(sm) {
+    font-size: 1.65em;
+  }
+
+  @include media-breakpoint-up(md) {
+    text-align: left;
+    font-size: 1.78em;
+  }
+
+  @include media-breakpoint-up(lg) {
+    font-size: 1.9em;
+  }
+
+  @include media-breakpoint-up(xl) {
+    font-size: 2em;
+  }
+}

@@ -1,0 +1,28 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap&subset=cyrillic,cyrillic-ext');
+@import "fontawesome-free-5.12.1-web/scss/fontawesome.scss";
+
+// Bootstrap
+@import "bootstrap-4.4.1/scss/bootstrap.scss";
+
+// Custom files
+@import "scss/variables";
+@import "scss/global";
+@import "scss/top-navbar";
+@import "scss/main-navbar";
+@import "scss/carousel";
+@import "scss/cards";
+@import "scss/videos";
+@import "scss/subscriptions";
+@import "scss/footer";
+@import "scss/page-location";
+@import "scss/categories";
+@import "scss/pagination";
+@import "scss/single-post";
+@import "scss/discussion";
+@import "scss/new-discussion";
+@import "scss/contact";
+@import "scss/login-register";
+@import "scss/profile";
+@import "scss/tc-404";
+@import "scss/password-recovery.scss"

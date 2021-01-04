@@ -1,0 +1,148 @@
+.login,
+.register {
+  .background {
+    background-image: url('img/login.jpg');
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .welcome-text {
+    color: $third-color;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .form {
+    margin-top: 8rem;
+
+    @include media-breakpoint-down(md) {
+      margin-top: 2rem;
+    }
+
+    .form-label {
+      color: $third-color;
+      font-size: 1.19rem;
+    }
+
+    input.login {
+      background: url(svg/login.svg) no-repeat scroll 5% 50%;
+      height: 54px;
+      border: 2px solid $placeholder-color;
+      border-radius: 5px;
+      padding-left: 12%;
+  
+      &::placeholder {
+        color: $placeholder-color;
+        font-size: 1.2rem;
+      }
+  
+      &:focus {
+        box-shadow: none;
+        outline: 0 none !important;
+        border: 2px solid $primary;
+      }
+    }
+
+    input.pass {
+      background: url(svg/pass.svg) no-repeat scroll 5% 50%;
+      height: 54px;
+      border: 2px solid $placeholder-color;
+      border-radius: 5px;
+      padding-left: 12%;
+  
+      &::placeholder {
+        color: $placeholder-color;
+        font-size: 1.2rem;
+      }
+  
+      &:focus {
+        box-shadow: none;
+        outline: 0 none !important;
+        border: 2px solid $primary;
+      }
+    }
+
+    input.email {
+      background: url(svg/email.svg) no-repeat scroll 5% 50%;
+      height: 54px;
+      border: 2px solid $placeholder-color;
+      border-radius: 5px;
+      padding-left: 12%;
+  
+      &::placeholder {
+        color: $placeholder-color;
+        font-size: 1.2rem;
+      }
+  
+      &:focus {
+        box-shadow: none;
+        outline: 0 none !important;
+        border: 2px solid $primary;
+      }
+    }
+
+    .custom-control-label {
+      line-height: 24px;
+      color: $login-remember-me;
+      font-size: 1.13rem;
+      font-weight: 300;
+    }
+
+    .custom-control-input {
+      &:checked {
+        display:none;
+      }
+    }
+
+    .forget-password {
+      line-height: 24px;
+      font-size: 1.13rem;
+      color: $url-color;
+    }
+
+    .copyright {
+      position: fixed;
+      bottom: 0;
+      right: 30%;
+
+      @include media-breakpoint-down(lg) {
+        bottom: 0;
+        right: 25%;
+      }
+
+      @include media-breakpoint-down(md) {
+        position: relative;
+        bottom: 0%;
+        right: 0%;
+      }
+    }
+
+    .copyright-text {
+      color: $copyright-text;
+      font-size: 0.75rem;
+      font-weight: 300;
+    }
+  }
+
+  .btn-login-custom {
+    color: black !important;
+    border: 1px solid $third-color;
+    border-radius: 13px;
+    
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      border-radius: 5px;
+    }
+  
+    &:hover {
+      color: white !important;
+      background: $secondary;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.footer {
+  .navbar-footer {
+    .nav-link {
+      line-height: 1.19em;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+  
+      &:hover {
+        color: $primary !important;
+      }
+    }
+  
+    .active {
+      height: 2rem;
+      position: relative;
+      padding-bottom: 5px;
+
+      .nav-link {
+        display: inline-block;
+        border-bottom: 2px solid $primary;
+      }
+  
+      a {
+        font-weight: 500;
+        color: $primary !important;
+      }
+    }
+  }
+
+  .navbar-brand {
+    img {
+      @include media-breakpoint-down(md) {
+        max-width: 9.38em;
+      }
+    }
+  }
+
+  .text-under-logo {
+    color: $text-under-logo;
+    font-size: 0.75em;
+    line-height: 1.4em;
+  }
+
+  .footer-icons {
+    margin-right: 3.7em;
+  }
+
+  .legal-info {
+    color: $legal-info;
+    font-size: 0.75em;
+    line-height: 1.4em;
+    text-align: center;
+  }
+}

@@ -1,0 +1,177 @@
+.navbar-menu {
+  padding: 32px 0 !important;
+}
+
+.navbar-logo {
+  @include media-breakpoint-down(lg) {
+    width: 180px;
+  }
+
+  @include media-breakpoint-down(xs) {
+    width: 150px;
+  }
+}
+
+.navbar-header {
+  #navbar-login-big,
+  #navbar-register-big {
+    @media only screen and (max-width: 1650px) {
+      display: none;
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: block !important;
+      padding-top: 1rem;
+      
+      a {
+        padding: 1rem 0 !important;
+      }
+    }
+  }
+
+  #navbar-register-small {
+    background-color: $primary;
+  }
+
+  #navbar-login-small {
+    border: 1px solid $third-color;
+  }
+
+  #navbar-login-small,
+  #navbar-register-small {
+    border-radius: 5px;
+    padding: 0 0.7rem;
+
+    @media only screen and (min-width: 1650px) {
+      display: none;
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: none;
+    }
+
+    img {
+      height: 17px;
+    }
+  }
+
+  .active{
+    display: inline-block;
+    position: relative;
+    padding-top: 0.2rem;
+
+    @include media-breakpoint-down(lg) {
+      a {
+        color: $primary !important;
+      }
+    }
+  }
+  
+  .active:after {
+    position: absolute;
+    content: '';
+    border-bottom: 4px solid $primary;
+    width: 85%;
+    transform: translateX(-50%);
+    bottom: -35.2px;
+    left: 50%;
+
+    @media only screen and (max-width: 1650px) {
+      bottom: -2.5em;
+    }
+
+    @media only screen and (min-width: 1780px) {
+      bottom: -2.1em;
+    }
+
+    @media only screen and (min-width: 1970px) {
+      bottom: -2em;
+    }
+
+    @include media-breakpoint-down(lg) {
+      border: none;
+    }
+  }
+
+  .nav-link {
+    font-size: 1.05rem;
+    font-weight: 500;
+    line-height: 1.19em;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .mx-custom {
+    margin: 0 1em;
+
+    @media only screen and (max-width: 1500px) {
+      margin: 0 0.8em;
+    }
+
+    @media only screen and (max-width: 1400px) {
+      margin: 0 0.5em;
+    }
+
+    @media only screen and (max-width: 1280px) {
+      margin: 0 0.3em;
+    }
+
+
+  }
+
+  .ml-custom {
+    margin-left: 1em;
+  }
+
+  .ml-custom {
+    margin-right: 1em;
+  }
+}
+
+.navbar-toggler {
+  &:focus {
+    outline: none;
+  }
+}
+
+.toggle-button-active {
+  background-color: $primary;
+}
+
+.btn-login {
+  color: black !important;
+  border: 1px solid $secondary;
+  border-radius: 13px;
+  padding: 0.8vw 1.5vw !important;
+
+  @media only screen and (max-width: 1350px) {
+    margin-right: 0.5rem;
+  }
+
+  &:hover {
+    color: white !important;
+    background: $secondary;
+  }
+  
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-register {
+  background-color: $primary;
+  color: white !important;
+  border-radius: 13px;
+  padding: 0.8vw 1vw !important;
+
+  &:hover {
+    background-color: white;
+    color: $primary !important;
+    border: 1px solid $primary;
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}

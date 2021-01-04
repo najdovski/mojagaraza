@@ -1,0 +1,107 @@
+.single-post {
+
+  .post-date {
+    color: $post-date;
+    font-weight: 300;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  .single-post-heading-image {
+    border-radius: 10px;
+  }
+
+  .share-buttons {
+    a {
+      border-radius: 10px;
+
+      @include media-breakpoint-down(sm) {
+        max-width: 31%;
+        height: auto;
+      }
+    }
+
+    .share-text {
+      font-size: 1.13rem;
+      margin-top: 0.1rem;
+    }
+  }
+
+  .fb-share {
+    background-color: $facebook;
+  }
+
+  .twitter-share {
+    background-color: $twitter;
+    margin: 0 0.8rem;
+    @include media-breakpoint-up(lg) {
+      margin: 0 2.4rem;
+    }
+  }
+
+  .linkedin-share {
+    background-color: $linkedin;
+  }
+
+  .single-post-text {
+    color: $third-color;
+    font-size: 1.13rem;
+    font-weight: 300;
+  }
+
+  .prev-next {
+    color: $third-color;
+    font-size: 1.5rem;
+    .post-heading {
+      font-weight: 700;
+    }
+
+    .post-subheading {
+      font-weight: 300;
+    }
+  }
+
+  .similar-articles {
+    color: $third-color;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .similar-articles-cards {
+    margin-top: 2rem !important;
+
+    img {
+      height: 14rem;
+      object-fit: cover;
+      border-radius: 10px 10px 0 0;
+    }
+  }
+
+  .single-post-right-section {
+    margin-top: 0rem !important;
+    .card {
+      margin-top: 3rem !important;
+  
+      img {
+        @include media-breakpoint-up(xl) {
+          width: 15.9rem !important;
+          height: 31rem !important;
+        }
+      }
+    }
+
+    .card-text {
+      @include media-breakpoint-down(lg) {
+        width: 100% !important;
+      }
+    }
+
+    .card-img-overlay {
+      @include media-breakpoint-down(xs) {
+        top: 10% !important;
+      }
+    }
+  }
+}

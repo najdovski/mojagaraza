@@ -1,0 +1,95 @@
+.profile {
+  .profile-current-image {
+    max-width: 215px;
+  }
+  
+  .profile-name {
+    color: $third-color;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  
+  .profile-email {
+    color: $profile-email;
+    font-size: 1.13rem;
+    font-weight: 500;
+  }
+
+  .form-label {
+    color: $third-color;
+    font-size: 1.19rem;
+  }
+  
+  input {
+    height: 54px;
+    border: 2px solid $placeholder-color;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+
+    &::placeholder {
+      color: $placeholder-color;
+      font-size: 1.2rem;
+    }
+
+    &:focus {
+      box-shadow: none;
+      outline: 0 none !important;
+      border: 2px solid $primary;
+    }
+  }
+
+  .btn-save-changes {
+    background-color: $primary;
+    color: white !important;
+    border-radius: 5px;
+    width: 195px;
+    height: 54px;
+    font-size: 0.88rem;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      border-radius: 5px;
+    }
+  
+    &:hover {
+      background-color: white;
+      color: $primary !important;
+      border: 1px solid $primary;
+    }
+  }
+
+  #profile-picture {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+  }
+
+  #profile-picture + label {
+    border: 2px solid $placeholder-color;
+    color: $primary;
+    font-weight: 300;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    padding: 3% 0;
+    border-radius: 5px;
+  }
+
+  #profile-picture:focus + label,
+    #profile-picture + label:hover {
+      cursor: pointer;
+  }
+
+  #profile-picture:focus + label,
+  #profile-picture + label:focus {
+    border: 2px solid $primary;
+}
+
+  .profile-picture-text {
+    color: $third-color;
+  }
+}

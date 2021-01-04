@@ -1,0 +1,44 @@
+.video {
+  cursor: pointer;
+  filter: brightness(60%);
+  transition: .3s ease-in-out;
+
+  &:hover {
+    filter: brightness(100%);
+  }
+
+  .video-thumbnail {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 17.5em;
+  }
+  
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .review-banner {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 32px;
+    width: 5.63em;
+    height: 1.88em;
+    color: white;
+    position: absolute;
+    top: 25px;
+    left: 50px;
+  }
+
+  .youtube-video {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    height: 17.5em;
+    display: none;
+  }
+}

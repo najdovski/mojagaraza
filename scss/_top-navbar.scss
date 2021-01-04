@@ -1,0 +1,38 @@
+.social-icon {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.top-navbar {
+  background-color: $top-navbar-bg;
+
+  // Disable sticky top on smaller screens
+  @include media-breakpoint-down(md) {
+    position: relative !important;
+  }
+}
+
+.search-input {
+    border: 1px solid $placeholder-color;
+    width: 254px;
+    height: 34px;
+    border-radius: 6px;
+    padding-bottom: 0.5em;
+    background: url(svg/search.svg) no-repeat scroll 96% 50%;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+    }
+        
+    &::placeholder {
+        color: $placeholder-color;
+        font-size: 0.75em;
+    }
+
+    &:focus {
+      box-shadow: none;
+      outline: 0 none !important;
+      border: 1px solid $primary;
+    }
+}

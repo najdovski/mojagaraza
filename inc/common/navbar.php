@@ -22,26 +22,26 @@
       <div class="row justify-content-around">
           <div class="col">
           <nav class="navbar navbar-menu navbar-expand-xl navbar-light">
-            <a href="index.php"><img src="svg/logo.svg" class="navbar-logo"></a>
+            <a href="index"><img src="svg/logo.svg" class="navbar-logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse navbar-header" id="navbarNav">
               <ul class="navbar-nav ml-auto text-nowrap mt-5 mt-xl-0 bg-transparent">
                 <li class="nav-item mx-custom active">
-                  <a class="nav-link" href="index.php">Почетна</a>
+                  <a class="nav-link" href="index">Почетна</a>
                 </li>
                 <li class="nav-item mx-custom">
                   <a class="nav-link" href="#">Новости за возила</a>
                 </li>
                 <li class="nav-item mx-custom">
-                  <a class="nav-link" href="forum-page.php">Дискусии</a>
+                  <a class="nav-link" href="forum-page">Дискусии</a>
                 </li>
                 <li class="nav-item mx-custom">
-                  <a class="nav-link" href="index.php#videos">Видеа</a>
+                  <a class="nav-link" href="index#videos">Видеа</a>
                 </li>
                 <li class="nav-item mx-custom">
-                  <a class="nav-link" href="contact.php">Контакт</a>
+                  <a class="nav-link" href="contact">Контакт</a>
                 </li>
                 <li id="navbar-login-big" class="nav-item mx-custom">
                   <a class="nav-link btn btn-login px-3" href="#">Логирај се</a>

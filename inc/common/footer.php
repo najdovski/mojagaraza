@@ -14,19 +14,19 @@
         <div class="collapse show navbar-collapse mr-lg-3 pr-lg-3">
           <ul class="navbar-nav navbar-footer ml-auto text-nowrap">
             <li class="nav-item active mx-3 mb-5 mb-lg-0">
-              <a class="nav-link" href="index.php">Почетна</a>
+              <a class="nav-link" href="index">Почетна</a>
             </li>
             <li class="nav-item mx-3 mb-4 mb-lg-0">
               <a class="nav-link" href="#">Новости за возила</a>
             </li>
             <li class="nav-item mx-3 mb-4 mb-lg-0">
-              <a class="nav-link" href="forum-page.php">Дискусии</a>
+              <a class="nav-link" href="forum-page">Дискусии</a>
             </li>
             <li class="nav-item mx-3 mb-4 mb-lg-0">
-              <a class="nav-link" href="index.php?#videos">Видеа</a>
+              <a class="nav-link" href="index#videos">Видеа</a>
             </li>
             <li class="nav-item mx-3 mb-4 mb-lg-0">
-              <a class="nav-link" href="contact.php">Контакт</a>
+              <a class="nav-link" href="contact">Контакт</a>
             </li>
           </ul>
         </div>
